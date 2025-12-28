@@ -1,0 +1,103 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: radial-gradient(grey, rgb(36, 36, 36));
+}
+
+h1 {
+    font-family: Ballet;
+    font-size: 100px;
+    font-weight: normal;
+    margin: 60px;
+    text-align: center;
+    color: rgb(44, 0, 0);
+    text-shadow: 1px 1px 10px rgb(59, 20, 20);
+}
+
+h2 {
+    font-size: 80px;
+    font-family: "Castoro Titling", serif;
+    font-weight: 600;
+    margin: 60px;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(48, 0, 0);
+    text-shadow: 1px 1px 10px rgb(48, 0, 0), 1px 1px 20px rgba(167, 0, 0, 0.184)
+}
+
+h3 {
+    font-size: 80px;
+    font-family: "Castoro Titling", serif;
+    font-weight: 600;
+    margin: 60px;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(29, 0, 0);
+    text-shadow: 1px 1px 10px rgb(32, 1, 1)
+}
+
+p {
+    max-width: 1170px;
+    flex-basis: 50%;
+    margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 60;
+    text-align: center;
+    color: rgb(49, 0, 0);
+    text-shadow: 1px 1px 10px rgb(67, 0, 0);
+}
+
+.div1 {
+    display: flex;
+    gap: 20px;
+}
+
+.div1 img {
+    width: 550px;
+}
+
+.div2 {
+    display: flex;
+    justify-content: center;
+}
+
+.div2 img {
+    width: 300px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+img {
+    filter: saturate(35%);
+}
+
+.nav {
+    color: rgb(44, 0, 0);
+    text-decoration: none;
+}
+
+.nav:hover {
+    color: rgb(178, 142, 142);
+    text-shadow: 1px 1px 10px rgb(210, 0, 0);
+}
+
+.rockdiv {
+    background: linear-gradient(rgb(125, 125, 125), rgb(79, 79, 79));
+    border: dotted 2px rgb(255, 243, 205);
+    border-radius: 100px;
+    box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.581);
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.rockdiv img {
+    padding: 10px;
+    width: 450px;
+
+}
