@@ -1,0 +1,37 @@
+<!-- Inline CSS - იწერება პირდაპირ HTML ელემენტში, style ატრიბუტის გამოყენებით.
+ეს მეთოდი მოქმედებს მხოლოდ იმ ერთ ელემენტზე, სადაც წერია. -->
+
+<p style="color: red; font-size: 20px;">
+    ეს არის Inline CSS
+</p>
+
+
+<!-- Internal CSS - იწერება HTML ფაილის head ნაწილში, style თეგის შიგნით.
+ამ მეთოდით ვასტილებთ მთელ ერთ გვერდს -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p {
+            color: blue;
+            font-size: 18px;
+        }
+    </style>
+
+<p>ეს არის Internal CSS</p>
+</body>
+</html>
+
+
+<!-- External CSS - იწერება ცალკე css ფაილში და HTML ფაილს უკავშირდება link თეგით.
+ეს არის საუკეთესო და ყველაზე გამოყენებადი მეთოდი. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+
+<p>ეს არის External CSS</p>
+</body>
+</html>

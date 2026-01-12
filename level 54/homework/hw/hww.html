@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Parent Styling Example</title>
+    <style>
+        .parent {
+            background-color: #f2f2f2;
+            padding: 30px;
+            margin: 40px;
+            border: 3px solid #333;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+            font-family: Arial, sans-serif;
+            color: #222;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .parent * {
+            margin: 0;
+        }
+
+        .parent button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .parent button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <h1>სათაური პირველი</h1>
+        <h2>სათაური მეორე</h2>
+
+        <p>პირველი პარაგრაფი</p>
+        <p>მეორე პარაგრაფი</p>
+        <p>მესამე პარაგრაფი</p>
+        <p>მეოთხე პარაგრაფი</p>
+
+        <button> 1 </button>
+        <button> 2 </button>
+    </div>
+
+</body>
+</html>
