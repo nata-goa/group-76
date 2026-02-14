@@ -1,0 +1,228 @@
+
+<title>ქართული მეღვინეობა</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        header {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 22px;
+        }
+
+        nav {
+            background-color: #5a0f2e;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 50px 80px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: #5a0f2e;
+            margin-bottom: 20px;
+        }
+
+        .about {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about img {
+            width: 45%;
+            border-radius: 12px;
+        }
+
+        .about p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .wines {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .wine-card {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .wine-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .wine-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .wine-card div {
+            padding: 20px;
+        }
+
+        .wine-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .wine-card button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #5a0f2e;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .wine-card button:hover {
+            background-color: #7b1e3a;
+        }
+
+        .contact-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 60%;
+        }
+
+        footer {
+            background-color: #5a0f2e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ქართული მეღვინეობა</h1>
+    <p>ღვინო, რომელიც ტრადიციას ყვება</p>
+</header>
+
+<nav>
+    <a href="#about">ჩვენ შესახებ</a>
+    <a href="#wines">ღვინოები</a>
+    <a href="#contact">კონტაქტი</a>
+</nav>
+
+<div class="container">
+
+    <div class="section" id="about">
+        <h2>ჩვენ შესახებ</h2>
+        <div class="about">
+            
+            <p>
+                ჩვენი მეღვინეობა ეფუძნება 8000-წლიან ქართულ ღვინის კულტურას.
+                ვქმნით ბიოლოგიურად სუფთა ღვინოებს, ქვევრისა და თანამედროვე ტექნოლოგიების შერწყმით.
+            </p>
+        </div>
+    </div>
+
+    <div class="section" id="wines">
+        <h2>ჩვენი ღვინოები</h2>
+        <div class="wines">
+
+            <div class="wine-card">
+                <img src="saferavi.png">
+                <div>
+                    <h3>საფერავი</h3>
+                    <p>ღრმა, ძლიერი წითელი ღვინო მდიდარი არომატით.</p>
+                    <button onclick="buyWine('საფერავი')">შეძენა</button>
+                </div>
+            </div>
+
+            <div class="wine-card">
+                <img src="rqawiteli.jpg">
+                <div>
+                    <h3>რქაწითელი</h3>
+                    <p>მსუბუქი და არომატული თეთრი ღვინო.</p>
+                    <button onclick="buyWine('რქაწითელი')">შეძენა</button>
+                </div>
+            </div>
+
+            <div class="wine-card">
+                <img src="qinzmarauli.png">
+                <div>
+                    <h3>ქინძმარაული</h3>
+                    <p>ნახევრად ტკბილი ღვინო ხილის ტონებით.</p>
+                    <button onclick="buyWine('ქინძმარაული')">შეძენა</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section" id="contact">
+        <h2>კონტაქტი</h2>
+        <div class="contact-box">
+            <p>Email: info@wine.ge</p>
+            <p>ტელ: +995 599 12 34 56</p>
+            <p>მისამართი: კახეთი, საქართველო</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 ქართული მეღვინეობა</p>
+</footer>
+
+</body>
+</html>

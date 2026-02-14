@@ -1,0 +1,91 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: url('d6.jpg') center/cover  fixed;
+}
+
+header {
+    background: rgba(114, 47, 55, 0.9);
+    padding: 30px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+main {
+    margin-top: 90px;
+    padding: 20px;
+    background: rgba(50, 30, 0, 0.7);
+}
+
+h1 {
+    color: gold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: khaki;
+    margin: 15px 0 10px;
+}
+
+p, li {
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+section img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 8px;
+}
+
+video {
+    width: 100%;
+    max-width: 450px;
+    margin: 10px auto;
+    display: block;
+}
+
+footer {
+    background: rgba(114, 47, 55, 0.9);
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
