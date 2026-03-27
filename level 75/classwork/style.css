@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+    background-color: linear-gradient (to right,rgb(198, 182, 227) rgb(72, 29, 97));
+
+}
+h1 { 
+margin-bottom: 20px;
+font-family: cursive;
+}
+.movies{
+    list-style-type: upper-roman;
+    color:white;
+    background-color: linear-gradient (to right, rgb(108, 183, 183) rgb(15, 84, 72));
+    width: 100px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.movies ul {
+    list-style-type: square;
+    color:#222;
+    background-color: linear-gradient (to right,rgb(196, 137, 175) rgb(108, 32, 68));
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: normal;
+
+}
